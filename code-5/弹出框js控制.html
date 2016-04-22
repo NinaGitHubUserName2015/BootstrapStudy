@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>index</title>
+	<link rel="stylesheet" href="dist/css/bootstrap.min.css">
+	<script src="dist/js/jquery.min.js"></script>
+	<script src="dist/js/bootstrap.min.js"></script>
+	<script src="dist/js/holder.min.js"></script>
+	<script src="dist/js/application.js"></script>
+	<style>
+		body{
+			padding-top:100px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<button class='btn btn-danger btn-lg'>Click to toggle popover</button>
+	</div>	
+</body>
+<script>
+$('button').popover({
+	'placement':'right',
+	'title':'111',
+	'content':'2222<br>33333<br>4444<br>555555',
+	'html':true,
+	'trigger':'hover'
+});
+</script>
+</html>

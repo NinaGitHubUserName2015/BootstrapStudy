@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>index</title>
+	<link rel="stylesheet" href="dist/css/bootstrap.min.css">
+	<script src="dist/js/jquery.min.js"></script>
+	<script src="dist/js/bootstrap.min.js"></script>
+	<script src="dist/js/holder.min.js"></script>
+	<script src="dist/js/application.js"></script>
+	<style>
+		body{
+			padding-top:100px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<button class='btn btn-danger btn-lg' data-loading-text='正在加载...' data-complete-text="加载完成!">Click to toggle popover</button>
+	</div>	
+</body>
+<script>
+$('.btn').click(function(){
+	obj=$(this);
+	obj.button('loading');
+	setTimeout(function(){
+		obj.button('complete');
+	},5000);
+});
+
+</script>
+</html>

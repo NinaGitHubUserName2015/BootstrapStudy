@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>index</title>
+	<link rel="stylesheet" href="dist/css/bootstrap.min.css">
+	<script src="dist/js/jquery.min.js"></script>
+	<script src="dist/js/bootstrap.min.js"></script>
+	<script src="dist/js/holder.min.js"></script>
+	<script src="dist/js/application.js"></script>
+	<style>
+		body{
+			padding-top:10px;
+		}
+
+		.carousel-indicators{
+			position:absolute;
+			top:10px;
+		}
+
+		.carousel-caption{
+			background:#000000;
+			opacity:0.5;
+			width:940px;
+			position:absolute;
+			left:0px;
+			bottom:0px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="carousel slide" data-ride="carousel" id='mycarousel'>
+			<ul class="carousel-indicators">
+			    <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+			    <li data-target="#mycarousel" data-slide-to="1"></li>
+			    <li data-target="#mycarousel" data-slide-to="2"></li>
+			 </ul>	
+
+			<div class="carousel-inner">
+			    <div class="item active">
+					<img src="jc.jpg">
+					<div class="carousel-caption">
+						<p>第一幅图片:Bootstrap基于CSS3实现动画效果，但是Internet Explorer 8 & 9不支持这些必要的CSS属性。因此，使用这两种浏览器时将会丢失过渡动画效果。而且，我们并不打算使用基于jQuery实现替代功能。</p>
+					</div>
+			    </div>
+
+		        <div class="item">
+		    		<img src="cc.jpg">
+		    		<div class="carousel-caption">
+		    			<p>第二幅图片:Bootstrap基于CSS3实现动画效果，但是Internet Explorer 8 & 9不支持这些必要的CSS属性。因此，使用这两种浏览器时将会丢失过渡动画效果。而且，我们并不打算使用基于jQuery实现替代功能。</p>
+		    		</div>
+		        </div>
+
+	            <div class="item">
+	        		<img src="yx.jpg">
+	        		<div class="carousel-caption">
+	        			<p>第三幅图片:Bootstrap基于CSS3实现动画效果，但是Internet Explorer 8 & 9不支持这些必要的CSS属性。因此，使用这两种浏览器时将会丢失过渡动画效果。而且，我们并不打算使用基于jQuery实现替代功能。</p>
+	        		</div>
+	            </div>
+			</div>
+
+			<a class="left carousel-control" href="#mycarousel" data-slide="prev">
+			    <span class="glyphicon glyphicon-chevron-left"></span>
+			</a>
+			<a class="right carousel-control" href="#mycarousel" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right"></span>
+			</a>
+		</div>
+
+
+	</div>	
+</body>
+<script>
+</script>
+</html>
